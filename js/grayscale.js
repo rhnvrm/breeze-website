@@ -195,3 +195,25 @@ $(function(){
         regexpReplaceWith: "$1<sup>days</sup> $2<sup>hours</sup> $3<sup>minutes</sup> $4<sup>seconds</sup>"
     });
 });
+
+var div = $('.intro');
+var interval;
+var counter = 0;
+
+$(document).ready(function () {
+    interval = window.setInterval(changeFilter, 100);
+}, function () {
+    window.clearInterval(interval);
+});
+
+function changeFilter() {
+    
+    var filter_value = parseInt($('.intro').css('-webkit-filter').split('(')[1].split('d')[0])
+
+    var filter = 'hue-rotate(' + (filter_value + 10) + 'deg)';
+
+    div.css({
+        '-webkit-filter': filter,
+        'filter': filter
+    });
+}

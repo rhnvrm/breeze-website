@@ -153,9 +153,9 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-    text-shadow: 1px 1px #ff0000;
+    -webkit-filter:  hue-rotate(90deg); /* Chrome, Safari, Opera */
+    filter:  hue-rotate(90deg);
+    text-shadow: 1px 1px #000000;
 }
 
 .intro .intro-body {
