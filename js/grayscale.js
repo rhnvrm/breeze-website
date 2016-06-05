@@ -208,7 +208,15 @@ $(document).ready(function () {
 
 function changeFilter() {
     
-    var filter_value = parseInt($('.intro').css('-webkit-filter').split('(')[1].split('d')[0])
+    //Browser support for chrome's need for webkit filter 
+    var filter_browser_support = 'filter';
+
+    //use webkit or not since chrome supports -webkit-filter only as of yet
+    isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+    if(isChrome) filter_browser_support = '-webkit-filter'
+
+    var filter_value = parseInt($('.intro').css(filter_browser_support).split('(')[1].split('d')[0])
 
     var filter = 'hue-rotate(' + (filter_value + 10) + 'deg)';
 
