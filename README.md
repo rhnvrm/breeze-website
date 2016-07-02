@@ -1,5 +1,5 @@
 #✨Official Website for Breeze 2016!✨  
-[![GitHub Stars](https://img.shields.io/github/stars/rhnvrm/breeze-website.svg)](https://github.com/rhnvrm/breeze-website/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/rhnvrm/breeze-website.svg)](https://github.com/rhnvrm/breeze-website/issues) [![Current Version](https://img.shields.io/badge/version-0.1-green.svg)](https://github.com/rhnvrm/breeze-website) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](http://rhnvrm.github.io/breeze-website)
+[![GitHub Stars](https://img.shields.io/github/stars/rhnvrm/breeze-website.svg)](https://github.com/rhnvrm/breeze-website/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/rhnvrm/breeze-website.svg)](https://github.com/rhnvrm/breeze-website/issues) [![Stories in Ready](https://badge.waffle.io/rhnvrm/breeze-website.png?label=ready&title=Ready)](http://waffle.io/rhnvrm/breeze-website) [![Current Version](https://img.shields.io/badge/version-0.1-green.svg)](https://github.com/rhnvrm/breeze-website) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](http://rhnvrm.github.io/breeze-website)
 
 <img src="img/logo.png" width="650">
 
