@@ -287,7 +287,7 @@ a:focus {
     border: 2px solid #ddd;
     width: 80%;
     height: 400px;
-    margin-left: 16% ;
+    margin-left: 5.5% ;
 }
 
 @media(min-width:767px) {
