@@ -285,8 +285,9 @@ a:focus {
 
 #map {
     border: 2px solid #ddd;
-    width: 100%;
+    width: 80%;
     height: 400px;
+    margin-left: 16% ;
 }
 
 @media(min-width:767px) {
@@ -300,6 +301,7 @@ a:focus {
 
     #map {
         float: right;
+        width: 100%;
         margin-top: 50px;
         margin-bottom: 10px;
     }
@@ -341,7 +343,7 @@ ul.banner-social-buttons {
 
 @media(max-width:767px) {
     ul.banner-social-buttons li {
-        display: block;
+        display: inline;
         margin-bottom: 20px;
         padding: 0;
     }
