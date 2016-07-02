@@ -1,7 +1,7 @@
 #✨Official Website for Breeze 2016!✨  
 [![GitHub Stars](https://img.shields.io/github/stars/rhnvrm/breeze-website.svg)](https://github.com/rhnvrm/breeze-website/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/rhnvrm/breeze-website.svg)](https://github.com/rhnvrm/breeze-website/issues) [![Current Version](https://img.shields.io/badge/version-0.1-green.svg)](https://github.com/rhnvrm/breeze-website) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](http://rhnvrm.github.io/breeze-website)
 
-<img src="img/logo.png" style="max-width:200px!">
+<img src="img/logo.png" width="650">
 
 ## What is Breeze?
 Breeze is Shiv Nadar University's annual cultural fest.
@@ -14,4 +14,5 @@ Check it out [here](http://rhnvrm.github.io/breeze-website) !
 ---|---|---|---
 [Rohan Verma](https://github.com/rhnvrm) | [Karan Sharma](https://github.com/mr-karan) | [Vishal Gauba](https://github.com/flamefractal) | [Sheikh Araf] (https://github.com/arafsheikh)
 
-
+## Screenshot
+<img src="img/screener_website.png" width="400">
