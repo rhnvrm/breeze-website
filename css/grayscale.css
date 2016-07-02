@@ -190,9 +190,12 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-filter:  hue-rotate(90deg); /* Chrome, Safari, Opera */
-    filter:  hue-rotate(90deg);
-    text-shadow: 1px 1px #000000;
+    -webkit-filter:   grayscale(30%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    text-shadow: 2px 2px black;
+    -webkit-filter: opacity(30%); /* Chrome, Safari, Opera */
+    filter: opacity(100%);
+    opacity: 0.8;
 }
 
 @media(min-width:768px) {
