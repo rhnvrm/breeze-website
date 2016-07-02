@@ -287,7 +287,7 @@ a:focus {
     border: 2px solid #ddd;
     width: 80%;
     height: 400px;
-    margin-left: 5.5% ;
+    margin-left: 8% ;
 }
 
 @media(min-width:767px) {
@@ -387,7 +387,7 @@ img::-moz-selection {
 
 .share-buttons {
   padding-top: 100px;
-    width: 545px;
+    width: 42.4%;
     margin: 0 auto;
 }
   .share-buttons ul {
@@ -452,22 +452,6 @@ img::-moz-selection {
     color: #43d854;
     border-color: #43d854; }
 
-.right-half {
-    color: cyan;
-    display: block;
-    float: right;
-    width: 800px;
-    margin-right: 10px;
-    font-size: 40px;
-}
-
-.left-half img {
-    margin-top: -50px;
-    float: left;
-    margin-left: 10px;
-}
-
-
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
@@ -481,7 +465,7 @@ body {
 }
 .right-text {
     float: right;
-    width: 480px;
+    width: 500px;
     margin-right: 10px;
 }
 
