@@ -14,7 +14,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/jquery.countdownTimer.css" />
-
+    <link type="text/css" rel="stylesheet" href="css/breeze_image_gallery.css"/>
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
@@ -61,6 +61,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#map">Map</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#container">Image Gallery</a>
                     </li>
                 </ul>
             </div>
@@ -114,14 +117,40 @@
 
     <!-- Map Section -->
     <div id="map"></div>
-
+    <!--Image Gallery Section-->
+    <div id="container">
+            <div class="image_number">
+                <div id="left-arrow"><a onclick="nextSlide(-1)">&#10094</a></div>
+                <img src="img/breeze.jpg"></img>
+                <div class="caption"><p>Lights flash on the stage as a band performs on Breeze 2015. </p></div>
+                <div id="right-arrow"><a onclick="nextSlide(1)">&#10095</a></div>
+            </div>
+            <div class="image_number">
+                <div id="left-arrow"><a onclick="nextSlide(-1)">&#10094</a></div>
+                <img src="img/24608240289_8639476c87_z.jpg"></img>
+                <div class="caption"><p>Preparations under way for Breeze 2015.</p></div>
+                <div id="right-arrow"><a onclick="nextSlide(1)">&#10095</a></div>
+            </div>
+            <div class="image_number">
+                <div id="left-arrow"><a onclick="nextSlide(-1)">&#10094</a></div>
+                <img src="img/24949532226_6f95a9c824_z.jpg"></img>
+                <div class="caption"><p>Stage lights</p></div>
+                <div id="right-arrow"><a onclick="nextSlide(1)">&#10095</a></div>
+            </div>
+            <div class="image_number">
+                <div id="left-arrow"><a onclick="nextSlide(-1)">&#10094</a></div>
+                <img src="img/24680405960_3dbe4a9aa0_z.jpg"></img>
+                <div class="caption"><p>Neha Kakkar performs on stage on day 2 of Breeze 2015.</p></div>
+                <div id="right-arrow"><a onclick="nextSlide(1)">&#10095</a></div>
+            </div>
+        </div>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; Breeze 2016</p>
         </div>
     </footer>
-
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -138,6 +167,29 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    <!--Javascript code for Image Gallery-->
+    <script>
+        var slideIndex=1;
+        showSlides(slideIndex);
+        function nextSlide(n)   {
+            showSlides(slideIndex+=n);
+        }
+        
+        function showSlides(n)  {
+            var slides=document.getElementsByClassName("image_number");
+            var i;
+            for(i=0;i<slides.length;i++)    {
+                slides[i].style.display="none";
+            }
+            if(n>slides.length) {
+                slideIndex=1;
+            }
+            else if(n<1)    {
+                slideIndex=slides.length;
+            }
+            slides[slideIndex-1].style.display="block";
+        }
+    </script>
 
 
 </body>
