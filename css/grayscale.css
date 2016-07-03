@@ -283,27 +283,6 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
-}
-
 .btn {
     border-radius: 0;
     text-transform: uppercase;
@@ -380,4 +359,56 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+
+
+/*********************************
+* For Contact section and the Map
+**********************************/
+.left-text {
+    float: left;
+    width: 500px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.right-text {
+    float: right;
+    width: 500px;
+    margin-right: 10px;
+}
+
+#map {
+    border: 2px solid #ddd;
+    width: 80%;
+    height: 400px;
+    margin-left: 8% ;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 50px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    #map {
+        float: right;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
+/* Contact and map ends here */
+
+
+
+/* General design changes...*/
+.section-name {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #ddd;
+    padding-top: 6px;
+    border-top: 2px solid #ddd;
 }
