@@ -24,6 +24,23 @@
         .carousel-caption{
             background: rgba(0,0,0,0.5);
         }
+        #theme {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+        }
+        #theme iframe {
+            position: absolute;
+            margin: 5vh auto;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 80%;
+        }
+        .intro, #bg-aboutUs, #theme, #previous-performers{
+            height: 100vh;
+        }
     </style>
 
     <!-- Custom Fonts -->
@@ -64,7 +81,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#aboutUs">About Us</a>
+                        <a class="page-scroll" href="#bg-aboutUs">About Us</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#theme">Theme</a>
@@ -96,7 +113,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <img src="img/breeze-white.png" style="-webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);" height="100%" width="100%">
                         <p class="intro-text">Shiv Nadar University</p>
-                        <a href="#aboutUs" class="btn btn-circle page-scroll">
+                        <a href=".bg-aboutUs" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -106,7 +123,7 @@
     </header>
 
     <!-- About Us Section -->
-    <div class="bg-aboutUs">
+    <div class="bg-aboutUs" id="bg-aboutUs">
         <section id="aboutUs" class="container content-section text-center ">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -128,15 +145,13 @@
 
 
        <!-- Theme Section -->
-            <section id="theme" class="container-fluid text-center" style="padding: 80px 0px 30px 0px">
-                <!--<iframe src="http://www.youtube.com/embed/iu-hWvVapbM?autoplay=1" style="border: 0; width: 100%; height: 100%; "></iframe> -->
-                <div class="embed-responsive embed-responsive-16by9">
-                    <div id="theme-player" class="embed-responsive-item" ></div>
-                </div>
+            <section id="theme" class="container-fluid content-section text-center">
+                <iframe id="theme-player" class="embed-responsive-item" frameborder="0" allowfullscreen="1" src="https://www.youtube.com/embed/iu-hWvVapbM?modestbranding=1?autoplay=0&amp;showinfo=0&amp;origin=http%3A%2F%2F0.0.0.0%3A8000&amp;enablejsapi=1&amp;widgetid=1" style="opacity: 1;"></iframe>
             </section>
 
         <!--Previous Year's Performs -->
-        <section id="previous-performers">    
+        <section id="previous-performers" class="container-fluid content-section text-center">    
+
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -346,6 +361,7 @@
                    <a href="https://github.com/rhnvrm/breeze-website" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> Github<span class="network-name"></span></a>
                 </li>
             </ul>
+
         </div>
     </div>
 </section>
