@@ -186,12 +186,32 @@ function init() {
     });
 }
 
+var div = $('.intro');
+var interval;
+var counter = 0;
 
-$(function(){
-    $("#future_date").countdowntimer({
-        dateAndTime : "2016/08/31 00:00:00",
-        size : "lg",
-        regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
-        regexpReplaceWith: "$1<sup>days</sup> $2<sup>hours</sup> $3<sup>minutes</sup> $4<sup>seconds</sup>"
-    });
+$(document).ready(function () {
+    interval = window.setInterval(changeFilter, 100);
+}, function () {
+    window.clearInterval(interval);
 });
+
+function changeFilter() {
+    
+    //Browser support for chrome's need for webkit filter 
+    var filter_browser_support = 'filter';
+
+    //use webkit or not since chrome supports -webkit-filter only as of yet
+    isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+    if(isChrome) filter_browser_support = '-webkit-filter'
+
+    var filter_value = parseInt($('.intro').css(filter_browser_support).split('(')[1].split('d')[0])
+
+    var filter = 'hue-rotate(' + (filter_value + 10) + 'deg)';
+
+    div.css({
+        '-webkit-filter': filter,
+        'filter': filter
+    });
+}

@@ -147,16 +147,17 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/breeze.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-    text-shadow: 1px 1px #ff0000;
+    -webkit-filter:  hue-rotate(90deg); /* Chrome, Safari, Opera */
+    filter:  hue-rotate(90deg);
+    text-shadow: 1px 1px #000000;
 }
+
 
 .intro .intro-body {
     display: table-cell;
@@ -165,6 +166,8 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .intro .intro-body .intro-text {
@@ -172,6 +175,25 @@ a:focus {
     padding: 0px;
     margin: 0px;
     font-family: 'Dancing Script';
+}
+
+.bg-aboutUs {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/Picture1.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-filter:   grayscale(40%); /* Chrome, Safari, Opera */
+    filter: grayscale(30%);
+    text-shadow: 1px 1px black;
+    -webkit-filter: opacity(90%); /* Chrome, Safari, Opera */
 }
 
 @media(min-width:768px) {
@@ -187,7 +209,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 36px;
     }
 }
 
@@ -289,7 +311,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 60px;
     }
 
     .download-section {
