@@ -1583,8 +1583,6 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2108,7 +2106,7 @@ pre code {
     width: 75%;
   }
   .col-lg-8 {
-    width: 66.66666667%;
+    width: 100%;
   }
   .col-lg-7 {
     width: 58.33333333%;
@@ -2240,7 +2238,8 @@ pre code {
     margin-left: 25%;
   }
   .col-lg-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: 0px;
+    margin-right: 30px;
   }
   .col-lg-offset-1 {
     margin-left: 8.33333333%;
