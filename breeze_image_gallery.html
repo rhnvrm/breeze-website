@@ -5,7 +5,19 @@
         <meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
         <meta content="utf-8" http-equiv="encoding"/>
         <link type="text/css" rel="stylesheet" href="breeze_image_gallery.css"/>
-        
+        <script="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $("document").ready(
+                function()  {
+                    $("div#left-arrow").on('click touchstart',function()    {
+                        nextSlide(-1);
+                    }
+                    $("div#right-arrow").on('click touchstart',function()   {
+                        nextSlide(1);
+                    }
+                }
+            );    
+        </script>
     </head>
     <body>
         <div id="container">
