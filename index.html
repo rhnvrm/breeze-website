@@ -153,6 +153,18 @@
     
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(
+                function()  {
+                    $("div#left-arrow").on('click touchstart',function()    {
+                        nextSlide(-1);
+                    }
+                    $("div#right-arrow").on('click touchstart',function()   {
+                        nextSlide(1);
+                    }
+                }
+            );
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
