@@ -17,6 +17,14 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <style type="text/css">
+        .carousel-inner > .item > img {
+            margin: 0 auto;
+        }
+        .carousel-caption{
+            background: rgba(0,0,0,0.5);
+        }
+    </style>
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -29,33 +37,32 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <![endif]-->
 
 
-</head>
+    </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top" >
-                     <span class="light"><i class="fa fa-lg fa-gamepad fa-pulse fa-spin" ></i> level up with </span> <i style='font-style: normal;color: #42dca3'>Breeze </i>
-                </a>
-            </div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top" >
+                       <span class="light"><i class="fa fa-lg fa-gamepad fa-pulse fa-spin" ></i> level up with </span> <i style='font-style: normal;color: #42dca3'>Breeze </i>
+                   </a>
+               </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
                     <li>
                         <a class="page-scroll" href="#aboutUs">About Us</a>
                     </li>
@@ -63,17 +70,20 @@
                         <a class="page-scroll" href="#theme">Theme</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#previous-performers">Previous Performers!</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#map">Map</a>
                     </li>
-                </ul>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+            <!-- /.container -->
+        </nav>
 
     <!-- Intro Header -->
     <header class="intro">
@@ -92,7 +102,7 @@
         </div>
     </header>
 
-    <!-- About Ss Section -->
+    <!-- About Us Section -->
     <div class="bg-aboutUs">
         <section id="aboutUs" class="container content-section text-center ">
             <div class="row">
@@ -107,74 +117,210 @@
                     <p><b>"CHALLENGE YOURSELF."</b><br>
                     See you at <b>Breeze ’16</b></p>
                     <h4>Coming Soon...</h4>
-                    <h3><a href="http://snu.edu.in/" target="_blank"><u>Learn more About Shiv Nadar University</u></a></h3>
-                    <a href="#theme" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>                
+                    <h3><a href="http://snu.edu.in/" target="_blank"><u>Learn more About Shiv Nadar University</u></a></h3>                
                 </div>
             </div>
         </section>
     </div>
 
 
-    <section id="theme" class="container content-section text-center">
-       <iframe src="http://www.youtube.com/embed/iu-hWvVapbM?autoplay=0&loop=1&modestbranding=1" style="border: 0; width: 100%; height: 390px; "></iframe>
-       <a href="#contact" class="btn btn-circle page-scroll">
-            <i class="fa fa-angle-double-down animated"></i>
-       </a> 
-    </section> 
+       <!-- Theme Section -->
+            <section id="theme" class="container-fluid text-center" style="padding: 80px 0px 30px 0px">
+                <!--<iframe src="http://www.youtube.com/embed/iu-hWvVapbM?autoplay=1" style="border: 0; width: 100%; height: 100%; "></iframe> -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div id="theme-player" class="embed-responsive-item" ></div>
+                </div>
+            </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Breeze Team</h2>
-                <p>Feel free to email us!</p>
-                <p><a href="mailto:feedback@snu-breeze.com">feedback@snu-breeze.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/rhnvrm" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/rhnvrm" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                </ul>
-                 <a href="#map" class="btn btn-circle page-scroll">
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>               
+        <!--Previous Year's Performs -->
+        <section id="previous-performers">    
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/Neha_Kakkar.png" alt="Neha Kakkar">
+                        <div class="carousel-caption">
+                            <h3>Neha Kakkar</h3>
+                            <p>Description placeholder.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                      <img src="img/Astitva.png" alt="Astitva, the band.">
+                      <div class="carousel-caption">
+                        <h3>Astitva</h3>
+                        <p>Description placeholder.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Javed_Ali.png" alt="Javed Ali">
+                    <div class="carousel-caption">
+                        <h3>Javed Ali</h3>
+                        <p>Description placeholder.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Raghuram.png" alt="Raghuram">
+                    <div class="carousel-caption">
+                        <h3>Raghuram</h3>
+                        <p>Description placeholder.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Adam_Evil.png" alt="Adam Evil">
+                    <div class="carousel-caption">
+                        <h3>Adam Evil</h3>
+                        <p>Description placeholder.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Anish_Sood.png" alt="Anish Sood">
+                    <div class="carousel-caption">
+                        <h3>Anish Sood</h3>
+                        <p>Description placeholder.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Half_Step_Down.png" alt="Half Step Down">
+                    <div class="carousel-caption">
+                        <h3>Half Step Down</h3>
+                        <p>Description placeholder.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Parikrama.png" alt="Parikrama">
+                    <div class="carousel-caption">
+                        <h3>Parikrama</h3>
+                        <p>Description placeholder.</p>
+                    </div>
+                </div>
             </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </section>
+    </section>  
 
-    <!-- Map Section -->
-    <div id="map"></div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Breeze 2016</p>
+<!-- Contact Section -->
+<section id="contact" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Contact Breeze Team</h2>
+            <p>Feel free to email us!</p>
+            <p><a href="mailto:feedback@snu-breeze.com">feedback@snu-breeze.com</a>
+            </p>
+            <ul class="list-inline banner-social-buttons">
+                <li>
+                    <a href="https://twitter.com/rhnvrm" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/rhnvrm" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+            </ul>
+            <a href="#page-top" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-up animated"></i>
+            </a>                
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<!-- Map Section -->
+<div id="map"></div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; Breeze 2016</p>
+    </div>
+</footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-    <script type="text/javascript" src="js/jquery.countdownTimer.js"></script>          
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+<script type="text/javascript" src="js/jquery.countdownTimer.js"></script>          
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/grayscale.js"></script>
 
 
-</body>
+<script>
+            // autoplay theme video on non-mobile devices
 
-</html>
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/player_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            var player;
+            function onYouTubePlayerAPIReady() {
+                player = new YT.Player('theme-player', {
+                    playerVars : {
+                        autoplay : 0
+                    },
+                    videoId: 'iu-hWvVapbM'
+                });
+            }
+
+            $(window).scroll(function() {
+                $("iframe").each( function() {
+                    var mq = window.matchMedia( "(max-width: 768px)" );
+                    if(!mq.matches){
+                        if( $(window).scrollTop() > $(this).offset().top - 200 ) {
+                            $(this).css('opacity',1);
+                            player.playVideo();
+                        }
+                        else {
+                            $(this).css('opacity',1);
+                            player.stopVideo();
+                        }
+                    }
+                }); 
+            });
+        </script>
+
+        <script type="text/javascript">
+            // auto start the carousel
+            $('#myCarousel').carousel({
+                interval: 1500,
+                cycle: true
+            });
+        </script>
+
+    </body>
+
+    </html>
