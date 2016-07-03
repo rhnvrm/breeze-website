@@ -47,6 +47,8 @@ div.caption {
 p   {
     text-align:center;
     color:white;
+    font-size:2em;
+    text-shadow:0px 5px 25px #F4FBFE;
 }
 
 div#left-arrow  {
@@ -58,6 +60,8 @@ div#left-arrow  {
     border-style:inset;
     border-color:transparent;
     color:#F4FBFE;
+    
+    background-color:transparent;
 }
 
 div#right-arrow  {
@@ -70,20 +74,23 @@ div#right-arrow  {
     border-color:white;
     border-color:transparent;
     color:#F4FBFE;
-}
+    background-color:transparent;
+    }
 a   {
     cursor:pointer;
     height:30px;
     width:30px;
-}
+    padding:30px;
+    box-shadow:0px 0px 30px #F4FBFE;
+    border-radius:10px;
+    
+    }
 a:hover {
-    background-color:#F4FBFE;
+    
     color:black;
-    padding:10px;
+    padding:30px;
 }
-a   {
-    padding:10px;
-}
+
 
 @keyframes anim {
     from    {opacity:0.6}
