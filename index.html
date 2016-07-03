@@ -118,10 +118,10 @@
             </section>
 
             <!-- Theme Section -->
-            <section id="theme" class="container-fluid text-center" style="padding: 30px 0px 30px 0px">
+            <section id="theme" class="container-fluid text-center" style="padding: 80px 0px 30px 0px">
                 <!--<iframe src="http://www.youtube.com/embed/iu-hWvVapbM?autoplay=1" style="border: 0; width: 100%; height: 100%; "></iframe> -->
                 <div class="embed-responsive embed-responsive-16by9">
-                    <<div id="theme-player" class="embed-responsive-item" ></div>
+                    <div id="theme-player" class="embed-responsive-item" ></div>
                 </div>
                 <a href="#contact" class="btn btn-circle page-scroll">
                     <i class="fa fa-angle-double-down animated"></i>
@@ -197,12 +197,16 @@
 
             $(window).scroll(function() {
                 $("iframe").each( function() {
-                    if( $(window).scrollTop() > $(this).offset().top - 200 ) {
-                        $(this).css('opacity',1);
-                        player.playVideo();
-                    } else {
-                        $(this).css('opacity',1);
-                        player.stopVideo();
+                    var mq = window.matchMedia( "(max-width: 768px)" );
+                    if(!mq.matches){
+                        if( $(window).scrollTop() > $(this).offset().top - 200 ) {
+                            $(this).css('opacity',1);
+                            player.playVideo();
+                        }
+                        else {
+                            $(this).css('opacity',1);
+                            player.stopVideo();
+                        }
                     }
                 }); 
             });
