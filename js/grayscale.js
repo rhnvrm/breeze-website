@@ -186,16 +186,6 @@ function init() {
     });
 }
 
-
-$(function(){
-    $("#future_date").countdowntimer({
-        dateAndTime : "2016/10/22 00:00:00",
-        size : "lg",
-        regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
-        regexpReplaceWith: "$1<sup>days</sup> $2<sup>hours</sup> $3<sup>minutes</sup> $4<sup>seconds</sup>"
-    });
-});
-
 var div = $('.intro');
 var interval;
 var counter = 0;
