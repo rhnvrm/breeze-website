@@ -1,0 +1,95 @@
+html,body    {
+    height:100%;
+    margin:0px;
+    padding:0px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    }
+
+div#container   {
+    position:relative;
+    top:0%;
+    left:0%;
+    max-width:1370px;
+    height:100%;
+    border-style:solid;
+    border-color:transparent;
+    padding:0em;
+    margin:0em;
+    border-width:0px;
+    
+}
+
+div.image_number    {
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    animation-name:anim;
+    animation-duration:3s;
+    -webkit-animation-name:anim;
+    -webkit-animation-duration:3s;
+}
+
+img {
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+
+div.caption {
+    width:100%;
+    position:absolute;
+    bottom:10%;
+}
+
+p   {
+    text-align:center;
+    color:white;
+}
+
+div#left-arrow  {
+    position:absolute;
+    top:50%;
+    left:5%;
+    height:auto;
+    width:10px;
+    border-style:inset;
+    border-color:transparent;
+    color:#F4FBFE;
+}
+
+div#right-arrow  {
+    position:absolute;
+    top:50%;
+    right:5%;
+    height:auto;
+    width:10px;
+    border-style:inset;
+    border-color:white;
+    border-color:transparent;
+    color:#F4FBFE;
+}
+a   {
+    cursor:pointer;
+    height:30px;
+    width:30px;
+}
+a:hover {
+    background-color:#F4FBFE;
+    color:black;
+    padding:10px;
+}
+a   {
+    padding:10px;
+}
+
+@keyframes anim {
+    from    {opacity:0.6}
+    to  {opacity:1.0}
+}
+@-webkit-keyframes anim {
+    from    {opacity:0.6}
+    to  {opacity:1.0}
+}
