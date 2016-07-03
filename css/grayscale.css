@@ -381,3 +381,82 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+
+
+/****************************
+* Social Share Buttons
+****************************/
+.share-buttons {
+  padding-top: 100px;
+    width: 43.7%;
+    margin: 0 auto;
+}
+  .share-buttons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .share-buttons ul li {
+      display: inline-block;
+      margin-right: 0.5em; }
+      .share-buttons ul li span {
+        display: none; }
+        @media only screen and (min-width: 600px) {
+          .share-buttons ul li span {
+            display: inline;
+            margin: 0.5em; } }
+
+.twitter {
+  background-color: #77bcf1;
+  color: #fff;
+  border-color: #77bcf1; }
+  .twitter:visited {
+    color: #fff;
+    border-color: #77bcf1; }
+  .twitter:hover {
+    background-color: #fff;
+    color: #77bcf1;
+    border-color: #77bcf1; }
+
+.facebook {
+  background-color: #627aac;
+  color: #fff;
+  border-color: #627aac; }
+  .facebook:visited {
+    color: #fff;
+    border-color: #627aac; }
+  .facebook:hover {
+    background-color: #fff;
+    color: #627aac;
+    border-color: #627aac; }
+
+.google-plus {
+  background-color: #e36f60;
+  color: #fff;
+  border-color: #e36f60; }
+  .google-plus:visited {
+    color: #fff;
+    border-color: #e36f60; }
+  .google-plus:hover {
+    background-color: #fff;
+    color: #e36f60;
+    border-color: #e36f60; }
+
+.whatsapp {
+  background-color: #43d854;
+  color: #fff;
+  border-color: #43d854; }
+  .whatsapp:visited {
+    color: #fff;
+    border-color: #43d854; }
+  .whatsapp:hover {
+    background-color: #fff;
+    color: #43d854;
+    border-color: #43d854; }
+    
+.center-wrap h5{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+/* End Social share buttons */
