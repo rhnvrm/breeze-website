@@ -184,18 +184,16 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/bk_gnd.jpg) no-repeat bottom center scroll;
+    background: url(../img/Picture1.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-filter:   grayscale(30%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-    text-shadow: 2px 2px black;
-    -webkit-filter: opacity(30%); /* Chrome, Safari, Opera */
-    filter: opacity(100%);
-    opacity: 0.8;
+    -webkit-filter:   grayscale(40%); /* Chrome, Safari, Opera */
+    filter: grayscale(30%);
+    text-shadow: 1px 1px black;
+    -webkit-filter: opacity(90%); /* Chrome, Safari, Opera */
 }
 
 @media(min-width:768px) {
