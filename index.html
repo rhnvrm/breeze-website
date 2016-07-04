@@ -416,7 +416,7 @@
                 $("iframe").each( function() {
                     var mq = window.matchMedia( "(max-width: 768px)" );
                     if(!mq.matches){
-                        if( $(window).scrollTop() > $(this).offset().top - 200 ) {
+                        if(  (($(window).scrollTop()) > ($('#theme').offset().top - 30))   &&    (($(window).scrollTop()) <  ($('#theme').offset().top + $('#theme-player').height()))   ) {
                             $(this).css('opacity',1);
                             player.playVideo();
                         }
