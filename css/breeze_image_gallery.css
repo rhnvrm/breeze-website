@@ -1,7 +1,7 @@
 
 div#container   {
     position:relative;
-    top:5%;
+    top:0%;
     left:0%;
     max-width:1370px;
     height:100%;
@@ -25,7 +25,7 @@ div.image_number    {
     -webkit-animation-duration:3s;
 }
 
-img {
+div.image_number>img {
     height:100%;
     width:100%;
     z-index:-1;
@@ -37,7 +37,7 @@ div.caption {
     bottom:10%;
 }
 
-p   {
+div.caption p   {
     text-align:center;
     color:white;
     font-size:2em;
@@ -69,7 +69,7 @@ div#right-arrow  {
     color:#F4FBFE;
     background-color:transparent;
     }
-a   {
+div.image_number a   {
     cursor:pointer;
     height:30px;
     width:30px;
@@ -78,7 +78,7 @@ a   {
     border-radius:10px;
     
     }
-a:hover {
+div.image_number a:hover {
     
     color:black;
     padding:30px;
