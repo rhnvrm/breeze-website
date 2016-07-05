@@ -24,6 +24,9 @@
         .carousel-caption{
             background: rgba(0,0,0,0.5);
         }
+        #previous-performers>h1{
+            margin-top: 60px;
+        }
         #theme {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 */
@@ -38,8 +41,16 @@
             width: 90%;
             height: 80%;
         }
-        .intro, #bg-aboutUs, #theme, #previous-performers{
+        /*#contact{
+            margin-top: 50px
+        }*/
+        /*#map{
+            position: absolute;
+            margin-top: 60px;
+        }*/
+        .intro, #bg-aboutUs, #theme, #previous-performers, #gallery, #contact{
             height: 100vh;
+            max-height: 100vh;
         }
     </style>
 
@@ -93,10 +104,7 @@
                         <a class="page-scroll" href="#gallery">Gallery</a>
                     </li> 
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#map">Map</a>
+                        <a class="page-scroll" href="#contact">Contact &nbsp; Map</a>
                     </li>
                     </ul>
                 </div>
@@ -151,7 +159,7 @@
 
         <!--Previous Year's Performs -->
         <section id="previous-performers" class="container-fluid content-section text-center">    
-
+            <h1>Previous year's performers</h1>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -250,132 +258,139 @@
             <a data-flickr-embed="true"  href="https://www.flickr.com/photos/kondapivskrishnaprasanth/albums/72157664526162416" title="Breeze 2015"><img src="https://c8.staticflickr.com/2/1591/24976002375_ecdc43168c_z.jpg" width="80%" height="640" alt="Breeze 2015"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         </div>
     </section>  
-<!-- Contact Section -->
-<section id="contact" class="container content-section text-center">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h2>Contact Breeze Team</h2>
-            <p>Feel free to email us!</p>
-            <p><a href="mailto:breeze@snu.edu.in">breeze@snu.edu.in</a></p>
-           <div class="table-responsive">
-			<table class="table table-inverse table-condensed" style="text-align:left">
-				<thead>
-					<tr>
-						<th>
-							Contact
-						</th>
-						<th>
-							Position
-						</th>
-						<th>
-							Email
-						</th>
-						<th>
-							Phone
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							Sai Gireesh Pokala
-						</td>
-						<td>
-							Presider - Breeze 2016
-						</td>
-						<td>
-							<a href="mailto:presider@snu-breeze.com">presider@snu-breeze.com</a>
-						</td>
-						<td>
-							9958366044
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Manan Arora
-						</td>
-						<td>
-							Chairperson - Breeze 2016
-						</td>
-						<td>
-							<a href="mailto:chair@snu-breeze.com">chair@snu-breeze.com</a>
-						</td>
-						<td>
-							9999643904
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Lakshmi Ravi
-						</td>
-						<td>
-							Cultural Secretary - Breeze 2016
-						</td>
-						<td>
-							<a href="mailto:director@snu-breeze.com">director@snu-breeze.com</a>
-						</td>
-						<td>
-							9811400387
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Dasaratha Rama Reddy Munagala
-						</td>
-						<td>
-							Sports Secretary - Breeze 2016
-						</td>
-						<td>
-							<a href="mailto:director@snu-breeze.com">director@snu-breeze.com</a>
-						</td>
-						<td>
-							-
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Kartikeya Agarwal
-						</td>
-						<td>
-							Sponsorship Head - Breeze 2016
-						</td>
-						<td>
-							<a href="mailto:presider@snu-breeze.com">presider@snu-breeze.com</a>
-						</td>
-						<td>
-							9717035656
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-            <ul class="list-inline banner-social-buttons">
-                 <li>
-                    <a href="https://twitter.com/snu_breeze" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> Twitter<span class="network-name"></span></a>
-                </li>
-                <li>
-                    <a href="https://facebook.com/snu.breeze" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> Facebook<span class="network-name"></span></a>
-                </li>
 
-               <li>
-                   <a href="https://github.com/rhnvrm/breeze-website" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> Github<span class="network-name"></span></a>
-                </li>
-            </ul>
+    <!-- Contact & Map Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Contact Breeze Team</h2>
+                <p>Feel free to email us!</p>
+                <p><a href="mailto:breeze@snu.edu.in">breeze@snu.edu.in</a></p>
+               <div class="table-responsive">
+    			<table class="table table-inverse table-condensed" style="text-align:left">
+    				<thead>
+    					<tr>
+    						<th>
+    							Contact
+    						</th>
+    						<th>
+    							Position
+    						</th>
+    						<th>
+    							Email
+    						</th>
+    						<th>
+    							Phone
+    						</th>
+    					</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+    						<td>
+    							Sai Gireesh Pokala
+    						</td>
+    						<td>
+    							Presider - Breeze 2016
+    						</td>
+    						<td>
+    							<a href="mailto:presider@snu-breeze.com">presider@snu-breeze.com</a>
+    						</td>
+    						<td>
+    							9958366044
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							Manan Arora
+    						</td>
+    						<td>
+    							Chairperson - Breeze 2016
+    						</td>
+    						<td>
+    							<a href="mailto:chair@snu-breeze.com">chair@snu-breeze.com</a>
+    						</td>
+    						<td>
+    							9999643904
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							Lakshmi Ravi
+    						</td>
+    						<td>
+    							Cultural Secretary - Breeze 2016
+    						</td>
+    						<td>
+    							<a href="mailto:director@snu-breeze.com">director@snu-breeze.com</a>
+    						</td>
+    						<td>
+    							9811400387
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							Dasaratha Rama Reddy Munagala
+    						</td>
+    						<td>
+    							Sports Secretary - Breeze 2016
+    						</td>
+    						<td>
+    							<a href="mailto:director@snu-breeze.com">director@snu-breeze.com</a>
+    						</td>
+    						<td>
+    							-
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							Kartikeya Agarwal
+    						</td>
+    						<td>
+    							Sponsorship Head - Breeze 2016
+    						</td>
+    						<td>
+    							<a href="mailto:presider@snu-breeze.com">presider@snu-breeze.com</a>
+    						</td>
+    						<td>
+    							9717035656
+    						</td>
+    					</tr>
+    				</tbody>
+    			</table>
+    			</div>
+                <ul class="list-inline banner-social-buttons">
+                     <li>
+                        <a href="https://twitter.com/snu_breeze" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> Twitter<span class="network-name"></span></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/snu.breeze" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> Facebook<span class="network-name"></span></a>
+                    </li>
 
+                   <li>
+                       <a href="https://github.com/rhnvrm/breeze-website" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> Github<span class="network-name"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <!-- Map Section -->
+                <div id="map"></div>
+            </div>
         </div>
-    </div>
-</section>
 
-<!-- Map Section -->
-<div id="map"></div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Footer -->
+                <footer>
+                    <div class="container text-center">
+                        <p>Copyright &copy; Breeze 2016</p>
+                        <p>Shiv Nadar University, NH91, Tehsil Dadri, Uttar Pradesh 201314</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <div class="container text-center">
-        <p>Copyright &copy; Breeze 2016</p>
-        <p>Shiv Nadar University, NH91, Tehsil Dadri, Uttar Pradesh 201314</p>
-    </div>
-</footer>
+
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
@@ -416,7 +431,7 @@
                 $("iframe").each( function() {
                     var mq = window.matchMedia( "(max-width: 768px)" );
                     if(!mq.matches){
-                        if( $(window).scrollTop() > $(this).offset().top - 200 ) {
+                        if(  (($(window).scrollTop()) > ($('#theme').offset().top - 30))   &&    (($(window).scrollTop()) <  ($('#theme').offset().top + $('#theme-player').height()))   ) {
                             $(this).css('opacity',1);
                             player.playVideo();
                         }
@@ -432,7 +447,7 @@
         <script type="text/javascript">
             // auto start the carousel
             $('#myCarousel').carousel({
-                interval: 1500,
+                interval:3000,
                 cycle: true
             });
 
